@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "learning-angular-unit-tests"
+  "defaultProject": "learning-angular-unit-tests",
+  "cli": {
+    "analytics": false
+  }
 }
