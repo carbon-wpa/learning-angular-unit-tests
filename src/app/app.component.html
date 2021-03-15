@@ -1,3 +1,18 @@
 <h1>App component</h1>
 selected value: {{value}}<br /><br />
 <app-input-number (emitValue)="value = $event"></app-input-number>
+<br /><br /><br />
+<button (click)="getProducts()">load products</button>
+<br /><br />
+<div *ngFor="let item of data">
+  <div>
+    name: {{item?.name}}
+    careated at: {{item?.created?.format('DD-MM-YYYY')}}
+  </div>
+</div>
+
+<br /><br />
+<div>
+  <button (click)="changeBackground()">change bg</button>
+  <div [ngClass]="{isChecked: isChecked}">Test Text</div>
+</div>
